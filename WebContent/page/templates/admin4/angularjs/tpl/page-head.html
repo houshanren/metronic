@@ -1,0 +1,95 @@
+
+<!-- BEGIN PAGE TITLE -->
+<div class="page-title">
+	<h1><span data-ng-bind="$state.current.data.pageTitle"></span> <small data-ng-bind="$state.current.data.pageSubTitle"></small></h1>
+</div>
+<!-- END PAGE TITLE -->
+<!-- BEGIN PAGE TOOLBAR -->
+<div class="page-toolbar">
+	<!-- BEGIN THEME PANEL -->
+	<div class="btn-group btn-theme-panel">
+		<a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown">
+		<i class="icon-settings"></i>
+		</a>
+		<div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
+			<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<h3>主题</h3>
+									<ul class="theme-colors">
+										<li class="theme-color theme-color-default" data-theme="default">
+											<span class="theme-color-view"></span>
+											<span class="theme-color-name">深色页眉</span>
+										</li>
+										<li class="theme-color theme-color-light active" data-theme="light">
+											<span class="theme-color-view"></span>
+											<span class="theme-color-name">明亮页眉</span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-8 col-sm-8 col-xs-12 seperator">
+									<h3>布局</h3>
+									<ul class="theme-settings">
+										<li>
+											 主题风格
+											<select class="layout-style-option form-control input-small input-sm">
+												<option value="square">方角边风格</option>
+												<option value="rounded" selected="selected">圆角边风格</option>
+											</select>
+										</li>
+										<li>
+											 界面布局
+											<select class="layout-option form-control input-small input-sm">
+												<option value="fluid" selected="selected">自适应</option>
+												<option value="boxed">固宽剧中</option>
+											</select>
+										</li>
+										<li>
+											 页眉
+											<select class="page-header-option form-control input-small input-sm">
+												<option value="fixed" selected="selected">固定</option>
+												<option value="default">滚动</option>
+											</select>
+										</li>
+										<li>
+											 页眉下拉菜单样式
+											<select class="page-header-top-dropdown-style-option form-control input-small input-sm">
+												<option value="light">明亮</option>
+												<option value="dark" selected="selected">深色</option>
+											</select>
+										</li>
+										<li>
+											 侧边栏停靠
+											<select class="sidebar-option form-control input-small input-sm">
+												<option value="fixed">固定</option>
+												<option value="default" selected="selected">滚动</option>
+											</select>
+										</li>
+										<li>
+											 菜单展现方式
+											<select class="sidebar-menu-option form-control input-small input-sm">
+												<option value="accordion" selected="selected">手风琴</option>
+												<option value="hover">悬停</option>
+											</select>
+										</li>
+										<li>
+											 侧边栏位置
+											<select class="sidebar-pos-option form-control input-small input-sm">
+												<option value="left" selected="selected">左侧</option>
+												<option value="right">右侧</option>
+											</select>
+										</li>
+										<li>
+											 页脚
+											<select class="page-footer-option form-control input-small input-sm">
+												<option value="fixed">固定</option>
+												<option value="default" selected="selected">滚动</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+							</div>
+		</div>
+	</div>
+	<!-- END THEME PANEL -->
+</div>
+<!-- END PAGE TOOLBAR -->

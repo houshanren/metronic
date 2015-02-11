@@ -1,0 +1,165 @@
+<!-- BEGIN PAGE HEADER-->
+<div class="page-bar">
+	<ul class="page-breadcrumb">
+		<li>
+			<i class="fa fa-home"></i>
+			<a href="#/dashboard.html">主页</a>
+			<i class="fa fa-angle-right"></i>
+		</li>
+		<li>
+			<a href="#/profile/dashboard">个人主页</a>
+		</li>
+	</ul>
+	<div class="page-toolbar">
+		<div class="btn-group pull-right">
+			<button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+			Actions <i class="fa fa-angle-down"></i>
+			</button>
+			<ul class="dropdown-menu pull-right" role="menu">
+				<li>
+					<a href="#">
+					<i class="icon-user"></i> 新用户 </a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="icon-present"></i> 新事件 <span class="badge badge-success">4</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="icon-basket"></i> 新订单 </a>
+				</li>
+				<li class="divider">
+				</li>
+				<li>
+					<a href="#">
+					<i class="icon-flag"></i> 待处理订单 <span class="badge badge-danger">4</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="icon-users"></i> 待处理用户 <span class="badge badge-warning">12</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<h3 class="page-title">
+	个人信息
+</h3>
+<!-- END PAGE HEADER-->
+
+<!-- BEGIN PAGE CONTENT-->
+<div class="row" ng-controller="UserProfileController">
+	<div class="col-md-12">
+		<!-- BEGIN PROFILE SIDEBAR -->
+		<div class="profile-sidebar">
+			<!-- PORTLET MAIN -->
+			<div class="portlet light profile-sidebar-portlet">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<img src="../../../assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt="">
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						后山人
+					</div>
+					<div class="profile-usertitle-job">
+						开发工程师
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
+				<div class="profile-userbuttons">
+					<button type="button" class="btn btn-circle green-haze btn-sm">个人网站</button>
+					<button type="button" class="btn btn-circle btn-danger btn-sm">发消息</button>
+				</div>
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li ng-class="{active: $state.includes('profile.dashboard')}">
+							<a ui-sref="profile.dashboard">
+							<i class="icon-home"></i>
+							个人信息 </a>
+						</li>
+						<li ng-class="{active: $state.includes('profile.account')}">
+							<a ui-sref="profile.account">
+							<i class="icon-settings"></i>
+							账户设置 </a>
+						</li>
+						<li>
+							<a href="#/todo">
+							<i class="icon-check"></i>
+							待办事项 </a>
+						</li>
+						<li ng-class="{active: $state.includes('profile.help')}">
+							<a ui-sref="profile.help">
+							<i class="icon-info"></i>
+							帮助信息 </a>
+						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+			<!-- END PORTLET MAIN -->
+			<!-- PORTLET MAIN -->
+			<div class="portlet light">
+				<!-- STAT -->
+				<div class="row list-separated profile-stat">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="uppercase profile-stat-title">
+							37
+						</div>
+						<div class="uppercase profile-stat-text">
+							项目
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="uppercase profile-stat-title">
+							51
+						</div>
+						<div class="uppercase profile-stat-text">
+							任务
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="uppercase profile-stat-title">
+							61
+						</div>
+						<div class="uppercase profile-stat-text">
+							上传
+						</div>
+					</div>
+				</div>
+				<!-- END STAT -->
+				<div>
+					<h4 class="profile-desc-title">关于 后山人</h4>
+					<span class="profile-desc-text">系统简介 </span>
+					<div class="margin-top-20 profile-desc-link">
+						<i class="fa a-video-camera"></i>
+						<a href="http://www.youku.com">www.youku.com</a>
+					</div>
+					<div class="margin-top-20 profile-desc-link">
+						<i class="fa fa-qq"></i>
+						<a href="#">449237205</a>
+					</div>
+					<div class="margin-top-20 profile-desc-link">
+						<i class="fa fa-wechat"></i>
+						<a href="http://youku.com">houjieshanren</a>
+					</div>
+				</div>
+			</div>
+			<!-- END PORTLET MAIN -->
+		</div>
+		<!-- END BEGIN PROFILE SIDEBAR -->
+		<!-- BEGIN PROFILE CONTENT -->
+		<div ui-view class="profile-content fade-in-up"> 
+		</div>
+		<!-- END PROFILE CONTENT -->
+	</div>
+</div>
+<!-- END PAGE CONTENT-->

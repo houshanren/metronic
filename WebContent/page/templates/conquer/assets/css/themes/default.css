@@ -1,0 +1,247 @@
+/***
+Default theme
+***/
+/***
+Reset and overrides  
+***/
+body {
+  color: #222222;
+  background-color: #35363a !important;
+}
+/***
+Page header
+***/
+.header {
+  filter: none;
+  background-image: none;
+  background-color: #242527;
+}
+.header .navbar-nav .dropdown-toggle:hover,
+.header .navbar-nav .dropdown.open .dropdown-toggle {
+  background-color: #414247 !important;
+}
+.header .navbar-nav li.dropdown .dropdown-toggle i {
+  color: #999ba2 !important;
+}
+.header .navbar-nav > li.devider {
+  border-left: 1px solid #484a4f !important;
+}
+.header .navbar-nav > li.dropdown.user .dropdown-toggle .username {
+  color: #cecfd3;
+}
+.header .search-form .form-control,
+.page-sidebar-menu .search-form .form-control {
+  color: #7e818a;
+  background-color: #4d4f55;
+  border-color: #1d1d1f;
+}
+.header .search-form .input-icon > i,
+.page-sidebar-menu .search-form .input-icon > i {
+  color: #292a2d;
+}
+
+.header .search-form .form-control:-moz-placeholder {
+  color: #7e818a;
+}
+.header .search-form .form-control:-ms-input-placeholder {
+  color: #7e818a;
+}
+.header .search-form .form-control::-webkit-input-placeholder {
+  color: #7e818a;
+}
+
+.page-sidebar-menu .search-form .form-control:-moz-placeholder {
+  color: #7e818a;
+}
+.page-sidebar-menu .search-form .form-control:-ms-input-placeholder {
+  color: #7e818a;
+}
+.page-sidebar-menu .search-form .form-control::-webkit-input-placeholder {
+  color: #7e818a;
+}
+
+/***
+Page sidebar
+***/
+.page-sidebar {
+  background: #35363a;
+}
+ul.page-sidebar-menu > li {
+  border-bottom: 1px solid #414247;
+}
+ul.page-sidebar-menu > li > a {
+  color: #eee;
+}
+ul.page-sidebar-menu > li > a > .arrow {
+  color: #414247;
+}
+ul.page-sidebar-menu > li:first-child {
+  border-bottom: 1px solid transparent;
+}
+ul.page-sidebar-menu > li a i {
+  color: #999;
+} 
+
+.page-sidebar-menu.page-sidebar-menu-circle-icons > li > a i {
+  border: 1px solid #555;
+}
+
+ul.page-sidebar-menu > li.open > a,
+ul.page-sidebar-menu > li > a:hover,
+ul.page-sidebar-menu > li:hover > a {
+  background: #2B2B30;
+}
+
+ul.page-sidebar-menu > li.open,
+ul.page-sidebar-menu > li.active {
+    border-bottom: 0;
+}
+
+ul.page-sidebar-menu > li.active > a {
+  color: #f1f1f1;
+  background: #27272B !important;
+}
+ul.page-sidebar-menu > li.active > a i {
+  color: #ffffff;
+}
+ul.page-sidebar-menu > li > ul.sub-menu > li:first-child {
+  border-top: 0px !important;
+}
+ul.page-sidebar-menu > li > ul.sub-menu > li.active > a,
+ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {
+  color: #ffffff !important;
+  background: #414247 !important;
+}
+ul.page-sidebar-menu > li > ul.sub-menu > li > a:hover {
+  background: #414247 !important;
+}
+/* 3rd level sub menu */
+ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li.active > a,
+ul.page-sidebar-menu > li > ul.sub-menu li > ul.sub-menu > li > a:hover,
+ul.page-sidebar-menu > li > ul.sub-menu li.open > a {
+  color: #ffffff !important;
+  background: #414247 !important;
+}
+/* font color for all sub menu links*/
+ul.page-sidebar-menu li > ul.sub-menu > li > a {
+  color: #cecfd3;
+}
+/* menu arrows */
+ul.page-sidebar-menu > li > a .arrow:before,
+ul.page-sidebar-menu > li > a .arrow.open:before {
+  color: #666 !important;
+}
+ul.page-sidebar-menu > li > ul.sub-menu a .arrow:before,
+ul.page-sidebar-menu > li > ul.sub-menu a .arrow.open:before {
+  color: #999ba2 !important;
+}
+ul.page-sidebar-menu > li > a > .arrow.open:before {
+  color: #a6a8ae !important;
+}
+ul.page-sidebar-menu > li.active > a .arrow:before,
+ul.page-sidebar-menu > li.active > a .arrow.open:before {
+  color: #ffffff !important;
+}
+/* sub menu bg color on hover menu item */
+.page-sidebar-closed ul.page-sidebar-menu > li:hover .sub-menu {
+  background-color: #35363a;
+}
+/***
+Footer 
+***/
+.footer .footer-inner {
+  color: #999ba2;
+}
+.footer .footer-tools .go-top {
+  background-color: #4d4f55;
+}
+.footer .footer-tools .go-top:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.footer .footer-tools .go-top i {
+  color: #7e818a;
+}
+/* begin:fixed footer */
+.page-footer-fixed .footer {
+  background-color: #292a2d;
+}
+.page-footer-fixed .footer .footer-inner {
+  color: #7e818a;
+}
+.page-footer-fixed .footer .footer-tools .go-top {
+  background-color: #5a5b62;
+}
+.page-footer-fixed .footer .footer-tools .go-top i {
+  color: #c1c2c6;
+}
+/* end:fixed footer */
+/***
+
+/* begin: boxed page */
+@media (min-width: 992px) {
+  .page-boxed {
+    background-color: #35363a !important;
+  }
+  .page-boxed .page-container {
+    background-color: #35363a;
+    border-left: 1px solid #4d4f55;
+    border-bottom: 1px solid #4d4f55;
+  }
+  .page-boxed.page-sidebar-reversed .page-container {
+    border-left: 0;
+    border-right: 1px solid #4d4f55;
+  }
+  .page-boxed.page-sidebar-fixed .page-container {
+    border-left: 0;
+    border-bottom: 0;
+  }
+  .page-boxed.page-sidebar-reversed.page-sidebar-fixed .page-container {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .page-boxed.page-sidebar-fixed .page-sidebar {
+    border-left: 1px solid #4d4f55;
+  }
+  .page-boxed.page-sidebar-reversed.page-sidebar-fixed .page-sidebar {
+    border-right: 1px solid #4d4f55;
+    border-left: 0; 
+  }
+  .page-boxed.page-sidebar-fixed.page-footer-fixed .footer {
+    background-color: #292a2d !important;
+  }
+}
+/* end: boxed page */
+/***
+Landscape phone to portrait tablet
+***/
+@media (max-width: 991px) {
+  /***
+    page sidebar
+    ***/
+  .page-sidebar-menu,
+  .page-sidebar {
+    background-color: #1d1d1f !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+  }
+  ul.page-sidebar-menu > li {
+    border-bottom: 1px solid #313237;
+  }
+  ul.page-sidebar-menu > li:first-child,
+  ul.page-sidebar-menu > li:last-child {
+    border-bottom: 0 !important;
+  }
+  ul.page-sidebar-menu > li.open > a,
+  ul.page-sidebar-menu > li > a:hover,
+  ul.page-sidebar-menu > li:hover > a {
+    background: #09090a;
+  }
+}
+@media (max-width: 480px) {
+  .header .navbar-nav > li.devider {
+    border-left: 1px solid #414247 !important;
+  }
+}
