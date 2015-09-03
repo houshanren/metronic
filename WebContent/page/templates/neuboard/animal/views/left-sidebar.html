@@ -1,0 +1,99 @@
+<div class="sidebar-profile">
+    <div class="avatar">
+        <img class="img-circle profile-image" src="../../../assets/admin/layout4/img/avatar9.jpg">
+        <i class="on border-dark animated bounceIn"></i>
+    </div>
+    <div class="profile-body dropdown">
+        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><h4>admin <span class="caret"></span></h4></a>
+        <small class="title">系统用户1</small>
+        <ul class="dropdown-menu animated fadeInRight" role="menu">
+            <li class="profile-progress">
+                <h5>
+                <span>80%</span>
+                  <small>Profile complete</small>
+                </h5>
+                <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-primary" style="width: 80%">
+                    </div>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="javascript:void(0);">
+                    <span class="icon"><i class="fa fa-user"></i>
+                                </span>My Account</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <span class="icon"><i class="fa fa-envelope"></i>
+                                </span>Messages</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <span class="icon"><i class="fa fa-cog"></i>
+                                </span>Settings</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="javascript:void(0);">
+                    <span class="icon"><i class="fa fa-sign-out"></i>
+                    </span>Logout</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<nav>
+    <h5 class="sidebar-header">系统功能</h5>
+    <!-- location directive.js | data-nav-toggle-sub maps to -->
+    <ul class="nav nav-pills nav-stacked" data-nav-toggle-sub>
+        <li ui-sref-active="active">
+            <a href="" ui-sref="index" title="Dashboard">
+                <i class="fa fa-fw fa-tachometer"></i> 主页
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a href="javascript:;" ui-sref="ui.modals-popups" title="Animations">
+                <i class="fa  fa-fw fa-magic"></i> 申请寄存宠物
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a href="javascript:;" ui-sref="ui.tabs-accordions" title="Animations">
+                <i class="fa  fa-fw fa-magic"></i> 申请收养宠物
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a href="javascript:;" ui-sref="ui.alerts-notifications" title="Animations">
+                <i class="fa  fa-fw fa-magic"></i> 会员中心
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a href="javascript:;" ui-sref="ui.nestable-lists" title="Animations">
+                <i class="fa  fa-fw fa-magic"></i> 查看宠物信息
+            </a>
+        </li>
+        <li ui-sref-active="active">
+            <a href="javascript:;" ui-sref="animations" title="Animations">
+                <i class="fa  fa-fw fa-magic"></i> 留言板
+            </a>
+        </li>
+    </ul>
+</nav>
+<h5 class="sidebar-header">系统分享</h5>
+<div class="setting-list">
+    <div class="row">
+        <div class="col-xs-8">
+            <label for="checkOne" class="control-label">分享你的宠物信息</label>
+        </div>
+        <div class="col-xs-4">
+            <input type="checkbox" class="js-switch" ui-switch="{size: 'small', color:'#27B6AF',secondaryColor: '#B3B8C3'}" ng-model="checkOne" checked id="checkOne" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8">
+            <label for="checkTwo" class="control-label">新浪微博分享</label>
+        </div>
+        <div class="col-xs-4">
+            <input type="checkbox" class="js-switch" ui-switch="{size: 'small',color:'#27B6AF',secondaryColor: '#B3B8C3'}" ng-model="checkTwo" id="checkTwo" />
+        </div>
+    </div>
+</div>

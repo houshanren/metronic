@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Application Name - app.js and Main controller - controller.js-->
+<html ng-app="neuboard" ng-controller="MainCtrl as main">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Page title - directive.js -->
+    <title page-title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Sliders-->
+    <link rel="stylesheet" href="js/plugins/bootstrap-slider/css/slider.css">
+    <!-- Fonts  -->
+<link href="../../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <!--  CSS Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!--  Wizard -->
+    <link href="css/jquery.steps.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link rel="stylesheet" href="js/plugins/switchery/switchery.min.css">
+    <!-- C3 Chart -->
+    <link rel="stylesheet" href="js/plugins/c3Chart/css/c3.min.css">
+    <!-- Calendar demo -->
+    <link rel="stylesheet" href="css/clndr.css">
+    <!-- jvectormap-->
+    <link rel="stylesheet" href="js/plugins/jvectormap/css/jquery-jvectormap-2.0.1.css">
+    <!-- datatables-->
+    <link rel="stylesheet" href="js/plugins/dataTables/css/dataTables.css">
+    <!-- iCheck-->
+    <link rel="stylesheet" href="js/plugins/icheck/css/all.css">
+    <!-- Drop Zone-->
+    <link rel="stylesheet" href="js/plugins/dropzone/css/dropzone.css">
+    <link rel="stylesheet" href="js/plugins/dropzone/css/basic.css">
+    <!--  CSS Main -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Feature detection -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!-- Current state name -->
+
+<body class="{{$state.current.name}}">
+    <!-- Page Wrapper-->
+    <section id="main-wrapper" class="theme-default">
+        <!-- Page wrapper -->
+        <header id="header" ng-include="'views/header.html'"></header>
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar sidebar-left" ng-include="'views/left-sidebar.html'"></aside>
+        <!-- Content wraper -->
+        <section class="main-content-wrapper">
+            <!-- Main content view  -->
+            <div ui-view></div>
+            <!-- Footer -->
+            <div ng-include="'views/footer.html'"></div>
+        </section>
+        <!-- /Content wraper-->
+    </section>
+    <!-- /Page wrapper-->
+    <!-- Right Sidebar Navigation -->
+    <aside ng-include="'views/right-sidebar.html'" id="sidebar-right"></aside>
+    <!--Config demo-->
+    <div id="config" class="config hidden-xs" ng-include="'views/demo-settings.html'"></div>
+    <!-- jQuery -->
+    <script src="js/vendor/jquery-2.1.1.min.js"></script>
+    <!-- Angular -->
+    <script src="js/angular/angular.js"></script>
+    <script src="js/ui-router/angular-ui-router.min.js"></script>
+    <script src="js/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script src="js/angular/angular-animate.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/navgoco/jquery.navgoco.min.js"></script>
+    <!-- Morris charts -->
+    <script src="js/plugins/morris/raphael.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
+    <!-- chartJS  -->
+    <script src="js/plugins/chartjs/Chart.min.js"></script>
+    <!-- uievents -->
+    <script src="js/plugins/ui-events/event.js"></script>
+    <!-- Growl -->
+    <script src="js/plugins/growl/angular-growl-notifications.min.js"></script>
+    <!-- Pace JS -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Bootstrap sliders -->
+    <script src="js/plugins/bootstrap-slider/js/bootstrap-slider.js"></script>
+    <!-- C3 chart  -->
+    <script src="js/plugins/c3Chart/js/d3.min.js"></script>
+    <script src="js/plugins/c3Chart/js/c3.min.js"></script>
+    <script src="js/plugins/c3Chart/js/c3-angular.min.js"></script>
+    <!-- chartJS  -->
+    <script src="js/plugins/chartjs/tc-angular-chartjs.min.js"></script>
+    <!-- Sparkline charts -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Gauge -->
+    <script src="js/plugins/gauge/gauge.min.js"></script>
+    <!-- UI Tree -->
+    <script src="js/plugins/ui-tree/angular-ui-tree.min.js"></script>
+    <!-- switchery -->
+    <script src="js/plugins/switchery/switchery.min.js"></script>
+    <script src="js/plugins/switchery/ui-switchery.js"></script>
+    <!-- Maps -->
+    <script src="js/plugins/ui-maps/ui-map.js"></script>
+    <script src="js/plugins/jvectormap/js/jquery-jvectormap-2.0.1.min.js"></script>
+    <script src="js/plugins/jvectormap/js/jquery-jvectormap-us-aea-en.js"></script>
+    <!-- datatables -->
+    <script src="js/plugins/dataTables/js/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/js/dataTables.bootstrap.js"></script>
+    <script src="js/plugins/dataTables/js/angular-datatables.min.js"></script>
+    <!-- iCheck -->
+    <script src="js/plugins/icheck/js/icheck.min.js"></script>
+    <!-- Weather  -->
+    <script src="js/plugins/weather/js/skycons.js"></script>
+    <!-- Calendar  -->
+    <script src="js/plugins/calendar/moment.js"></script>
+    <script src="js/plugins/calendar/clndr.js"></script>
+    <!-- File Upload  -->
+    <script src="js/plugins/dropzone/js/dropzone.min.js"></script>
+    <!-- File Upload  -->
+    <script src="js/plugins/mask/js/jasny-bootstrap.min.js"></script>
+    <!-- wysiwyg editor  -->
+    <script src="js/plugins/editors/textAngular-sanitize.js"></script>
+    <script src="js/plugins/editors/textAngular.min.js"></script>
+    <!-- fullscreen  -->
+    <script src="js/plugins/fullscreen/jquery.fullscreen-min.js"></script>
+
+    <!-- Angular Script -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/controllers.js"></script>
+
+</body>
+
+</html>

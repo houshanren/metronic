@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="singApp">
+<head>
+    <title>Sing - Dashboard</title>
+    <link href="css/application.min.css" rel="stylesheet">
+    <!-- as of IE9 cannot parse css files with more that 4K classes separating in two files -->
+    <!--[if IE 9]>
+        <link href="css/application-ie9-part2.css" rel="stylesheet">
+    <![endif]-->
+    <link rel="shortcut icon" href="http://demo.flatlogic.com/sing-wrapbootstrap/angular/img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script>
+        /* yeah we need this empty stylesheet here. It's cool chrome & chromium fix
+         chrome fix https://code.google.com/p/chromium/issues/detail?id=167083
+         https://code.google.com/p/chromium/issues/detail?id=332189
+         */
+    </script>
+</head>
+<!-- sn-demo directive enables all functions which are used for demo. e.g. animating notifications count, chat unread messages.
+     to be removed in real app-->
+<body data-ng-controller="SingAppController" data-sn-demo data-ng-class="{'nav-static': app.state['nav-static'], 'login-page': loginPage, 'error-page': errorPage}">
+
+<div class="app" id="app" data-ui-view></div>
+
+<!-- common libraries. required for every page-->
+
+<!-- include jquery BEFORE angular so $(el).html() may resolve scripts. see http://stackoverflow.com/a/12200540/1298418 -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="vendor/ngstorage/ngStorage.min.js"></script>
+<script src="vendor/angular-resource/angular-resource.min.js"></script>
+<script src="vendor/angular-ui-utils/event.min.js"></script>
+<script src="vendor/angular-animate/angular-animate.min.js"></script>
+<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="vendor/angular-bootstrap-select/build/angular-bootstrap-select.min.js"></script>
+
+<!-- page specific angular libs. may be removed -->
+<script src="vendor/datatables/media/js/jquery.dataTables.js"></script>
+<script src="vendor/angular-datatables/dist/angular-datatables.min.js"></script>
+<script src="vendor/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
+<script src="vendor/angular-ui-calendar/src/calendar.js"></script>
+
+
+<!-- common libs. previous bootstrap-sass version was used, but due to a need to have single compiled file using bootstrap's version -->
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/widgster/widgster.js"></script>
+<script data-pace-options='{ "target": ".content-wrap", "ghostTime": 1000 }' src="vendor/pace.js/pace.min.js"></script>
+<script src="vendor/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+
+
+<!-- common app js -->
+<script src="js/ng/app.js"></script>
+<script src="js/ng/controllers.js"></script>
+<script src="js/ng/controllers.demo.js"></script>
+<script src="js/ng/services.js"></script>
+<script src="js/ng/directives.js"></script>
+<script src="js/ng/directives.demo.js"></script>
+
+<!-- page specific libs -->
+
+</body>
+</html>

@@ -929,12 +929,12 @@ a:hover {
 
   background: #e85425;
   color: #fff;
-  width: 128px;
-  height: 128px;  
+  width: 148px;
+  height: 148px;  
   line-height: 1;
   border-radius: 50%;
   position: relative;
-  padding: 28px 0 0;
+  padding: 48px 0 0;
   margin-bottom: 20px;
 }
 .pi-price strong:after {
@@ -952,7 +952,7 @@ a:hover {
   border-left: 9px solid transparent;
 }
 .pi-price strong em {
-  font-size: 71px;  
+  font-size: 45px;  
   font-style: normal;
 }
 .pricing-content {
@@ -1056,12 +1056,12 @@ a:hover {
 }
 .facts-block .item {
   background: rgba(255,99,77,0.92);
-  font: 400 20px "Pathway Gothic One", Arial, sans-serif;
+  font: 400 17px "Pathway Gothic One", Arial, sans-serif;
   text-transform: uppercase;
   width: 198px;
   height: 198px;
   border-radius: 50% !important;
-  padding: 33px 0 0; 
+  padding: 57px 0 0; 
   margin: 0 auto;
 }
 @-moz-document url-prefix() { 
@@ -1074,7 +1074,7 @@ a:hover {
 }
 .facts-block .item strong {
   display: block;
-  font-size: 80px;
+  font-size: 30px;
   text-transform: none;
   margin-bottom: 4px;
 }

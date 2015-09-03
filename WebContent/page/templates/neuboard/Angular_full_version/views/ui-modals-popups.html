@@ -1,0 +1,90 @@
+<div class="pageheader">
+    <h1>Modals &amp; Popups</h1>
+    <div class="breadcrumb-wrapper hidden-xs">
+        <span class="label">You are here:</span>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Dashboard</a>
+            </li>
+            <li>UI Elements</li>
+            <li class="active">Modals &amp; Popups</li>
+        </ol>
+    </div>
+</div>
+<section id="main-content" ng-controller="modalCtrl" class="animated fadeInRight">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Modals</h3>
+                    <div class="actions pull-right">
+                        <i data-widget-toggle class="fa fa-chevron-down"></i>
+                        <i data-widget-close class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Modal Default</h4>
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-primary btn-lg" ng-click="open1()">
+                                Launch default modal
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Modal Form</h4>
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-primary btn-lg" ng-click="open2()">
+                                Launch form modal
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Modal Scrolling</h4>
+                            <!-- Button trigger modal -->
+                            <button class="btn btn-primary btn-lg" ng-click="open3()">
+                                Launch scrolling modal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Popovers</h3>
+                    <div class="actions pull-right">
+                        <i data-widget-toggle class="fa fa-chevron-down"></i>
+                        <i data-widget-close class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <button popover-placement="left" popover="Popover on left" class="btn btn-default">Popover on left</button>
+                    <button popover-placement="top" popover="Popover on top" class="btn btn-default">Popover on top</button>
+                    <button popover-placement="bottom" popover="Popover on bottom" class="btn btn-default">Popover on bottom</button>
+                    <button popover-placement="right" popover="Popover on right" class="btn btn-default">Popover on right</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Tooltips</h3>
+                    <div class="actions pull-right">
+                        <i data-widget-toggle class="fa fa-chevron-down"></i>
+                        <i data-widget-close class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="tooltip-wrapper">
+                        <button type="button" class="btn btn-default" tooltip-placement="left" tooltip="Tooltip on left">Tooltip on left</button>
+                        <button type="button" class="btn btn-default" tooltip-placement="top" tooltip="Tooltip on top">Tooltip on top</button>
+                        <button type="button" class="btn btn-default" tooltip-placement="bottom" tooltip="Tooltip on bottom">Tooltip on bottom</button>
+                        <button type="button" class="btn btn-default" tooltip-placement="right" tooltip="Tooltip on right">Tooltip on right</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

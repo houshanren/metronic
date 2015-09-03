@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>乐视云计算业务查询系统 | HQL查询</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+<link href="../../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css">
+<!-- END PAGE LEVEL PLUGIN STYLES -->
+<!-- BEGIN PAGE STYLES -->
+<link href="../../assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE STYLES -->
+<!-- BEGIN THEME STYLES -->
+<!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
+<link href="../../assets/global/admin5css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/admin5css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout6/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/admin/layout6/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-quick-sidebar-over-content">
+
+	<!-- BEGIN MAIN LAYOUT -->
+	<!-- HEADER BEGIN -->
+    <header class="page-header">
+        <nav class="navbar" role="navigation">
+            <div class="container-fluid">
+                <div class="havbar-header" style="margin-right:20px;padding-top:10px;" >
+                	<!-- BEGIN LOGO -->
+                    <a  id="index" class="navbar-brand" href="startHql.html">
+                        <img src="../../assets/admin/layout6/img/logo.png" alt="Logo"  >
+                    </a>
+                	<!-- END LOGO -->
+
+	                <!-- BEGIN TOPBAR ACTIONS -->
+	                <div class="topbar-actions">
+		                <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
+						<form class="search-form" action="http://www.keenthemes.com/preview/metronic/theme/templates/admin6/extra_search.html" method="GET">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search here" name="query">
+								<span class="input-group-btn">
+									<a href="javascript:;" class="btn submit"><i class="fa fa-search"></i></a>
+								</span>
+							</div>
+						</form>
+						<!-- END HEADER SEARCH BOX -->
+
+	        
+	                	<!-- END GROUP NOTIFICATION -->
+
+	                	<!-- BEGIN USER PROFILE -->
+		                <div class="btn-group-img btn-group">
+							<button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<img src="../../assets/admin/layout4/img/avatar9.jpg" alt="">
+							</button>
+							<ul class="dropdown-menu-v2" role="menu">
+								<li class="active">
+									<a href="profile.html">我的任务 <span class="badge badge-danger">1</span> </a>
+								</li>
+								<li>
+									<a href="index.html#">收件箱 <span class="badge badge-info">3</span> </a>
+								</li>
+								<li>
+									<a href="todo.html">系统任务</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="lock_screen.html">锁屏</a>
+								</li>
+								<li>
+									<a href="login.html">退出</a>
+								</li>
+							</ul>
+						</div>
+						<!-- END USER PROFILE -->
+					</div>
+	                <!-- END TOPBAR ACTIONS -->
+                </div>
+            </div>
+            <!--/container-->
+        </nav>
+    </header>
+	<!-- HEADER END -->
+
+	<!-- PAGE CONTENT BEGIN -->
+    <div class="container-fluid">
+    	<div class="page-content page-content-popup">
+    		<!-- BEGIN PAGE CONTENT FIXED -->
+			<div class="page-content-fixed-header">
+				<h2>查询应用程序列表</h2>
+
+				<div class="content-header-menu">
+    				<!-- BEGIN DROPDOWN AJAX MENU -->
+    				<div class="dropdown-ajax-menu btn-group">
+						<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+							<i class="fa fa-circle"></i>
+						</button>
+						<ul class="dropdown-menu-v2">
+							<li> <a href="start.html">Application</a> </li>
+							<li> <a href="start.html">Reports</a> </li>
+							<li> <a href="start.html">Templates</a> </li>
+							<li> <a href="start.html">Settings</a> </li>
+						</ul>
+					</div>
+    				<!-- END DROPDOWN AJAX MENU -->
+
+    				<!-- BEGIN MENU TOGGLER -->
+    				<button type="button" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+	                    <span class="toggle-icon">
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </span>
+	                </button>
+    				<!-- END MENU TOGGLER -->
+    			</div>
+			</div>
+
+			<!-- BEGIN SIDEBAR -->
+			<div class="page-sidebar-wrapper">
+				<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+				<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+				<div class="page-sidebar navbar-collapse collapse">
+					<!-- BEGIN SIDEBAR MENU -->
+					<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+					<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+					<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+					<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+					<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+					<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+					<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+						<li>
+							<a href="startHql.html">
+							<i class="icon-home"></i>
+							<span class="title">主页</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="indexHql.html">
+							<i class="icon-list"></i>
+							<span class="title">系统面板</span>
+							</a>
+						</li>
+						<li>
+							<a href="indexHql.html">
+							<i class="icon-layers"></i>
+							<span class="title">HQL查询</span>
+							</a>
+						</li>
+						<li>
+							<a href="indexHql.html">
+							<i class="icon-user"></i>
+							<span class="title">业务查询1</span>
+							</a>
+						</li>
+						<li>
+							<a href="indexHql.html">
+							<i class="icon-check"></i>
+							<span class="title">业务查询2</span>
+							</a>
+						</li>
+						<li>
+							<a href="indexHql.html">
+							<i class="icon-paper-plane"></i>
+							<span class="title">业务查询3</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+							<i class="icon-folder"></i>
+							<span class="title">其他查询</span>
+							<span class="arrow "></span>
+							</a>
+							<ul class="sub-menu">
+								
+								<li>
+									<a href="indexHql.html">
+									<i class="icon-bar-chart"></i>
+									其他查询2 </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!-- END SIDEBAR MENU -->
+				</div>
+			</div>
+			<!-- END SIDEBAR -->
+
+			<div class="page-fixed-main-content">
+				<div class="row">
+	    			<div class="col-md-6">
+	    				<!-- BEGIN Portlet PORTLET-->
+						<div class="portlet light bordered">
+							<div class="portlet-title">
+								<div class="caption font-dark">
+									<span class="caption-subject bold uppercase">系统消耗</span>
+									<span class="caption-helper">系统整体消耗...</span>
+								</div>
+								<div class="actions">
+									<a href="index.html#" class="btn btn-circle btn-default btn-sm">
+									<i class="fa fa-pencil"></i> Edit </a>
+									<a href="index.html#" class="btn btn-circle btn-default btn-sm">
+									<i class="fa fa-plus"></i> Add </a>
+									<a class="btn btn-circle btn-icon-only btn-default fullscreen" href="index.html#">
+									</a>
+								</div>
+							</div>
+							<div class="portlet-body">
+    							<div id="columnLine" class="columnLine"></div>
+							</div>
+						</div>
+						<!-- END PORTLET-->
+	    			</div>
+	    			<div class="col-md-6">
+	    				<!-- BEGIN PORTLET-->
+						<div class="portlet light bordered">
+							<div class="portlet-title">
+								<div class="caption">
+									<span class="caption-subject bold uppercase font-red-sunglo">业务分析</span>
+									<span class="caption-helper">业务分析...</span>
+								</div>
+								<div class="actions">
+									<a class="btn btn-circle btn-icon-only btn-default" href="index.html#">
+									<i class="icon-cloud-upload"></i>
+									</a>
+									<a class="btn btn-circle btn-icon-only btn-default" href="index.html#">
+									<i class="icon-wrench"></i>
+									</a>
+									<a class="btn btn-circle btn-icon-only btn-default" href="index.html#">
+									<i class="icon-trash"></i>
+									</a>
+									<a class="btn btn-circle btn-icon-only btn-default fullscreen" href="index.html#">
+									</a>
+								</div>
+							</div>
+							<div class="portlet-body">
+    							<div id="animated-pie-chart" class="animated-pie-chart"></div>
+							</div>
+						</div>
+						<!-- END PORTLET-->
+	    			</div>
+	    		</div>
+
+	    		<div class="row">
+					<div class="col-md-6">
+						<!-- BEGIN PORTLET-->
+						<div class="portlet light bordered">
+							<div class="portlet-title">
+								<div class="caption caption-md font-blue">
+									<i class="icon-bar-chart theme-font hide"></i>
+									<span class="caption-subject theme-font bold uppercase">Sales Summary</span>
+									<span class="caption-helper hide">weekly stats...</span>
+								</div>
+								<div class="actions">
+									<div class="btn-group btn-group-devided" data-toggle="buttons">
+										<label class="btn btn-transparent grey-salsa btn-circle btn-sm active">
+										<input type="radio" name="options" class="toggle" id="option1">Today</label>
+										<label class="btn btn-transparent grey-salsa btn-circle btn-sm">
+										<input type="radio" name="options" class="toggle" id="option2">Week</label>
+										<label class="btn btn-transparent grey-salsa btn-circle btn-sm">
+										<input type="radio" name="options" class="toggle" id="option2">Month</label>
+									</div>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="row list-separated">
+									<div class="col-md-3 col-sm-3 col-xs-6">
+										<div class="font-grey-mint font-sm">
+											 Total Sales
+										</div>
+										<div class="uppercase font-hg font-red-flamingo">
+											 13,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-6">
+										<div class="font-grey-mint font-sm">
+											 Revenue
+										</div>
+										<div class="uppercase font-hg theme-font">
+											 4,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-6">
+										<div class="font-grey-mint font-sm">
+											 Expenses
+										</div>
+										<div class="uppercase font-hg font-purple">
+											 11,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-6">
+										<div class="font-grey-mint font-sm">
+											 Growth
+										</div>
+										<div class="uppercase font-hg font-blue-sharp">
+											 9,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</div>
+								</div>
+								<ul class="list-separated list-inline-xs hide">
+									<li>
+										<div class="font-grey-mint font-sm">
+											 Total Sales
+										</div>
+										<div class="uppercase font-hg font-red-flamingo">
+											 13,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</li>
+									<li>
+									</li>
+									<li class="border">
+										<div class="font-grey-mint font-sm">
+											 Revenue
+										</div>
+										<div class="uppercase font-hg theme-font">
+											 4,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</li>
+									<li class="divider">
+									</li>
+									<li>
+										<div class="font-grey-mint font-sm">
+											 Expenses
+										</div>
+										<div class="uppercase font-hg font-purple">
+											 11,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</li>
+									<li class="divider">
+									</li>
+									<li>
+										<div class="font-grey-mint font-sm">
+											 Growth
+										</div>
+										<div class="uppercase font-hg font-blue-sharp">
+											 9,760 <span class="font-lg font-grey-mint">$</span>
+										</div>
+									</li>
+								</ul>
+								<div id="sales_statistics" class="portlet-body-morris-fit morris-chart" style="height: 272px">
+								</div>
+							</div>
+						</div>
+						<!-- END PORTLET-->
+					</div>
+					<div class="col-md-6">
+						<!-- BEGIN PORTLET-->
+						<div class="portlet light bordered">
+							<div class="portlet-title">
+								<div class="caption caption-md font-red-sunglo">
+									<i class="icon-bar-chart theme-font hide"></i>
+									<span class="caption-subject theme-font bold uppercase">Member Activity</span>
+									<span class="caption-helper hide">weekly stats...</span>
+								</div>
+								<div class="actions">
+									<div class="btn-group btn-group-devided" data-toggle="buttons">
+										<label class="btn btn-transparent grey-salsa btn-circle btn-sm active">
+										<input type="radio" name="options" class="toggle" id="option1">Today</label>
+										<label class="btn btn-transparent grey-salsa btn-circle btn-sm">
+										<input type="radio" name="options" class="toggle" id="option2">Week</label>
+										<label class="btn btn-transparent grey-salsa btn-circle btn-sm">
+										<input type="radio" name="options" class="toggle" id="option2">Month</label>
+									</div>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="row number-stats margin-bottom-30">
+									<div class="col-md-6">
+										<div class="stat-left">
+											<div class="stat-chart">
+												<!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
+												<div id="sparkline_bar"></div>
+											</div>
+											<div class="stat-number">
+												<div class="title">
+													 Total
+												</div>
+												<div class="number">
+													 2460
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="stat-right">
+											<div class="stat-chart">
+												<!-- do not line break "sparkline_bar" div. sparkline chart has an issue when the container div has line break -->
+												<div id="sparkline_bar2"></div>
+											</div>
+											<div class="stat-number">
+												<div class="title">
+													 New
+												</div>
+												<div class="number">
+													 719
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table-scrollable table-scrollable-borderless">
+									<table class="table table-hover table-light">
+									<thead>
+									<tr class="uppercase">
+										<th colspan="2">
+											 MEMBER
+										</th>
+										<th>
+											 Earnings
+										</th>
+										<th>
+											 CASES
+										</th>
+										<th>
+											 CLOSED
+										</th>
+										<th>
+											 RATE
+										</th>
+									</tr>
+									</thead>
+									<tr>
+										<td class="fit">
+											<img class="user-pic" src="../../assets/admin/layout3/img/avatar4.jpg" alt="">
+										</td>
+										<td>
+											<a href="javascript:;" class="primary-link">Brain</a>
+										</td>
+										<td>
+											 $345
+										</td>
+										<td>
+											 45
+										</td>
+										<td>
+											 124
+										</td>
+										<td>
+											<span class="bold theme-font">80%</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="fit">
+											<img class="user-pic" src="../../assets/admin/layout3/img/avatar5.jpg" alt="">
+										</td>
+										<td>
+											<a href="javascript:;" class="primary-link">Nick</a>
+										</td>
+										<td>
+											 $560
+										</td>
+										<td>
+											 12
+										</td>
+										<td>
+											 24
+										</td>
+										<td>
+											<span class="bold theme-font">67%</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="fit">
+											<img class="user-pic" src="../../assets/admin/layout3/img/avatar6.jpg" alt="">
+										</td>
+										<td>
+											<a href="javascript:;" class="primary-link">Tim</a>
+										</td>
+										<td>
+											 $1,345
+										</td>
+										<td>
+											 450
+										</td>
+										<td>
+											 46
+										</td>
+										<td>
+											<span class="bold theme-font">98%</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="fit">
+											<img class="user-pic" src="../../assets/admin/layout3/img/avatar7.jpg" alt="">
+										</td>
+										<td>
+											<a href="javascript:;" class="primary-link">Tom</a>
+										</td>
+										<td>
+											 $645
+										</td>
+										<td>
+											 50
+										</td>
+										<td>
+											 89
+										</td>
+										<td>
+											<span class="bold theme-font">58%</span>
+										</td>
+									</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- END PORTLET-->
+					</div>
+				</div></div>
+			</div>
+    		<!-- END PAGE CONTENT FIXED -->
+
+    		<!-- Copyright BEGIN -->
+				<p class="copyright">2015 © 乐视云计算有限公司. 
+	 			<a href="#" title="数据团队" target="_blank">数据团队</a>
+	 		</p>
+			<!-- Copyright END -->
+
+		
+    	
+    </div>
+	<!-- PAGE CONTENT END -->
+    <!-- END MAIN LAYOUT -->
+    <a href="index.html#index" class="go2top"><i class="icon-arrow-up"></i></a>
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="../../assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript" ></script>
+<script src="../../assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript" ></script>
+<script src="../../assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript" ></script>
+<script src="../../assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript" ></script>
+<script src="../../assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout6/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout6/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout6/scripts/index.js" type="text/javascript"></script>
+<script src="../../assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+jQuery(document).ready(function() {    
+   	Metronic.init(); // init metronic core componets
+   	Layout.init(); // init layout
+    Index.init(); // init index page
+    QuickSidebar.init(); // init quick sidebar
+    Tasks.initDashboardWidget(); // init tash dashboard widget
+});
+</script>
+<!-- END JAVASCRIPTS -->
+
+</body>
+
+<!-- END BODY -->
+</html>

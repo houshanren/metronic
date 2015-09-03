@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+    
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar"> 
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index.html">Material Admin</a>
+                </li>
+                
+                <li class="pull-right">
+                <ul class="top-menu">
+                    <li id="toggle-width">
+                        <div class="toggle-switch">
+                            <input id="tw-switch" type="checkbox" hidden="hidden">
+                            <label for="tw-switch" class="ts-helper"></label>
+                        </div>
+                    </li>
+                    <li id="top-search">
+                        <a class="tm-search" href="invoice.html"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-message" href="invoice.html"><i class="tmn-counts">6</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview">
+                                <div class="lv-header">
+                                    Messages
+                                </div>
+                                <div class="lv-body">
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">David Belle</div>
+                                                <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="lv-footer" href="invoice.html">View All</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-notification" href="invoice.html"><i class="tmn-counts">9</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview" id="notifications">
+                                <div class="lv-header">
+                                    Notification
+                    
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="invoice.html" data-clear="notification">
+                                                <i class="zmdi zmdi-check-all"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lv-body">
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">David Belle</div>
+                                                <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="invoice.html">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                    
+                                <a class="lv-footer" href="invoice.html">View Previous</a>
+                            </div>
+                    
+                        </div>
+                    </li>
+                    <li class="dropdown hidden-xs">
+                        <a data-toggle="dropdown" class="tm-task" href="invoice.html"><i class="tmn-counts">2</i></a>
+                        <div class="dropdown-menu pull-right dropdown-menu-lg">
+                            <div class="listview">
+                                <div class="lv-header">
+                                    Tasks
+                                </div>
+                                <div class="lv-body">
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">HTML5 Validation Report</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                                <span class="sr-only">95% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Google Chrome Extension</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                <span class="sr-only">80% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Social Intranet Projects</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Bootstrap Admin Template</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                <span class="sr-only">60% Complete (warning)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Youtube Client App</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                <span class="sr-only">80% Complete (danger)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <a class="lv-footer" href="invoice.html">View All</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-settings" href="invoice.html"></a>
+                        <ul class="dropdown-menu dm-icon pull-right">
+                            <li class="hidden-xs">
+                                <a data-action="fullscreen" href="invoice.html"><i class="zmdi zmdi-fullscreen"></i> Toggle Fullscreen</a>
+                            </li>
+                            <li>
+                                <a data-action="clear-localstorage" href="invoice.html"><i class="zmdi zmdi-delete"></i> Clear Local Storage</a>
+                            </li>
+                            <li>
+                                <a href="invoice.html"><i class="zmdi zmdi-face"></i> Privacy Settings</a>
+                            </li>
+                            <li>
+                                <a href="invoice.html"><i class="zmdi zmdi-settings"></i> Other Settings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs" id="chat-trigger" data-trigger="#chat">
+                        <a class="tm-chat" href="invoice.html"></a>
+                    </li>
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner c-overflow">
+                    <div class="profile-menu">
+                        <a href="invoice.html">
+                            <div class="profile-pic">
+                                <img src="img/profile-pics/1.jpg" alt="">
+                            </div>
+
+                            <div class="profile-info">
+                                Malinda Hollaway
+
+                                <i class="zmdi zmdi-arrow-drop-down"></i>
+                            </div>
+                        </a>
+
+                        <ul class="main-menu">
+                            <li>
+                                <a href="profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
+                            </li>
+                            <li>
+                                <a href="invoice.html"><i class="zmdi zmdi-input-antenna"></i> Privacy Settings</a>
+                            </li>
+                            <li>
+                                <a href="invoice.html"><i class="zmdi zmdi-settings"></i> Settings</a>
+                            </li>
+                            <li>
+                                <a href="invoice.html"><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="main-menu">
+                        <li><a href="index.html"><i class="zmdi zmdi-home"></i> Home</a></li>
+                        <li><a href="typography.html"><i class="zmdi zmdi zmdi-format-underlined"></i> Typography</a></li>
+                        <li class="sub-menu">
+                            <a href="invoice.html"><i class="zmdi zmdi-widgets"></i> Widgets</a>
+
+                            <ul>
+                                <li><a href="widget-templates.html">Templates</a></li>
+                                <li><a class="active" href="widgets.html">Widgets</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="invoice.html"><i class="zmdi zmdi-view-list"></i> Tables</a>
+
+                            <ul>
+                                <li><a href="tables.html">Normal Tables</a></li>
+                                <li><a href="data-tables.html">Data Tables</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="invoice.html"><i class="zmdi zmdi-collection-text"></i> Forms</a>
+
+                            <ul>
+                                <li><a href="form-elements.html">Basic Form Elements</a></li>
+                                <li><a href="form-components.html">Form Components</a></li>
+                                <li><a href="form-examples.html">Form Examples</a></li>
+                                <li><a href="form-validations.html">Form Validation</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="invoice.html"><i class="zmdi zmdi-swap-alt"></i>User Interface</a>
+                            <ul>
+                                <li><a href="colors.html">Colors</a></li>
+                                <li><a href="animations.html">Animations</a></li>
+                                <li><a href="box-shadow.html">Box Shadow</a></li>
+                                <li><a href="buttons.html">Buttons</a></li>
+                                <li><a href="icons.html">Icons</a></li>
+                                <li><a href="alerts.html">Alerts</a></li>
+                                <li><a href="notification-dialog.html">Notifications & Dialogs</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="components.html">Components</a></li>
+                                <li><a href="other-components.html">Others</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="invoice.html"><i class="zmdi zmdi-trending-up"></i>Charts</a>
+                            <ul>
+                                <li><a href="flot-charts.html">Flot Charts</a></li>
+                                <li><a href="other-charts.html">Other Charts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="calendar.html"><i class="zmdi zmdi-calendar"></i> Calendar</a></li>
+                        <li class="sub-menu">
+                            <a href="invoice.html"><i class="zmdi zmdi-image"></i>Photo Gallery</a>
+                            <ul>
+                                <li><a href="photos.html">Default</a></li>
+                                <li><a href="photo-timeline.html">Timeline</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="generic-classes.html"><i class="zmdi zmdi-layers"></i> Generic Classes</a></li>
+                        <li class="sub-menu active toggled">
+                            <a href="invoice.html"><i class="zmdi zmdi-collection-item"></i> Sample Pages</a>
+                            <ul>
+                                
+                                <li><a href="profile-about.html">Profile</a></li>
+                                <li><a href="list-view.html">List View</a></li>
+                                <li><a href="messages.html">Messages</a></li>
+                                <li><a href="pricing-table.html">Pricing Table</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="wall.html">Wall</a></li>
+                                <li><a class="active" href="invoice.html">Invoice</a></li>
+                                <li><a href="login.html">Login and Sign Up</a></li>
+                                <li><a href="lockscreen.html">Lockscreen</a></li>
+                                <li><a href="404.html">Error 404</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <aside id="chat">
+                <ul class="tab-nav tn-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="invoice.html#friends" aria-controls="friends" role="tab" data-toggle="tab">Friends</a></li>
+                    <li role="presentation"><a href="invoice.html#online" aria-controls="online" role="tab" data-toggle="tab">Online Now</a></li>
+                </ul>
+            
+                <div class="chat-search">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" placeholder="Search People">
+                    </div>
+                </div>
+            
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="friends">
+                        <div class="listview">
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">David Belle</div>
+                                        <small class="lv-small">Last seen 3 hours ago</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/5.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Bill Phillips</div>
+                                        <small class="lv-small">Last seen 3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/6.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Wendy Mitchell</div>
+                                        <small class="lv-small">Last seen 2 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="online">
+                        <div class="listview">
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="invoice.html">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        
+        
+            <section id="content">
+
+                <div class="container invoice">
+
+                    <div class="block-header">
+                        <h2>Invoice <small>Print ready simple and sleek invoice template. Please use Google Chrome or any other Webkit browsers for better printing.</small></h2>
+                
+                        <ul class="actions">
+                            <li>
+                                <a href="invoice.html">
+                                    <i class="zmdi zmdi-trending-up"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="invoice.html">
+                                    <i class="zmdi zmdi-check-all"></i>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="invoice.html" data-toggle="dropdown">
+                                    <i class="zmdi zmdi-more-vert"></i>
+                                </a>
+                
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="invoice.html">Refresh</a>
+                                    </li>
+                                    <li>
+                                        <a href="invoice.html">Manage Widgets</a>
+                                    </li>
+                                    <li>
+                                        <a href="invoice.html">Widgets Settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header ch-alt text-center">
+                            <img class="i-logo" src="img/demo/invoice-logo.png" alt="">
+                        </div>
+                        
+                        <div class="card-body card-padding">
+                            <div class="row m-b-25">
+                                <div class="col-xs-6">
+                                    <div class="text-right">
+                                        <p class="c-gray">Invoice from</p>
+                                        
+                                        <h4>David Designs LLC</h4>
+                                        
+                                        <span class="text-muted">
+                                            <address>
+                                                44, Qube Towers
+                                                Dubai Media City, Dubai<br>
+                                                United Arab Emirates
+                                            </address>
+                
+                                            0097154686384<br/>
+                                            david.atom@ddesign.com
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-6">
+                                    <div class="i-to">
+                                        <p class="c-gray">Invoice to</p>
+                                        
+                                        <h4>Mallinda Hollaway</h4>
+                                        
+                                        <span class="text-muted">
+                                            <address>
+                                                10098 ABC Towers
+                                                Dubai Silicon Oasis, Dubai<br>
+                                                United Arab Emirates.
+                                            </address>
+                
+                                            00971123456789<br/>
+                                            malinda.h@gmail.com
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                            
+                            <div class="row m-t-25 p-0 m-b-25">
+                                <div class="col-xs-3">
+                                    <div class="bgm-amber brd-2 p-15">
+                                        <div class="c-white m-b-5">Invoice#</div>
+                                        <h2 class="m-0 c-white f-300">456213</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-3">
+                                    <div class="bgm-blue brd-2 p-15">
+                                        <div class="c-white m-b-5">Date</div>
+                                        <h2 class="m-0 c-white f-300">20/06/2015</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-3">
+                                    <div class="bgm-green brd-2 p-15">
+                                        <div class="c-white m-b-5">Whatever</div>
+                                        <h2 class="m-0 c-white f-300">472-000</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xs-3">
+                                    <div class="bgm-red brd-2 p-15">
+                                        <div class="c-white m-b-5">Grand Total</div>
+                                        <h2 class="m-0 c-white f-300">$23,980</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                            
+                            <table class="table i-table m-t-25 m-b-25">
+                                <thead class="t-uppercase">
+                                    <th class="c-gray">ITEM DESCRIPTION</th>
+                                    <th class="c-gray">UNIT PRICE</th>
+                                    <th class="c-gray">QUANTITY</th>
+                                    <th class="highlight">TOTAL</th>
+                                </thead>
+                                
+                                <tbody>
+                                    <thead>
+                                        <tr>
+                                            <td width="50%">
+                                                <h5 class="t-uppercase f-400">Curabitur lobortis</h5>
+                                                <p class="text-muted">Nullam consectetur dolor nec ullamcorper finibus. Quisque a porta mauris, non venenatis mi. Pellentesque habitant morbi tristique</p>
+                                            </td>
+                                            
+                                            <td>$450.00</td>
+                                            <td>05</td>
+                                            <td class="highlight">$2250.00</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <h5 class="t-uppercase f-400">Phasellus idarcu suscipit nun</h5>
+                                                <p class="text-muted">Pellentesque habitant morbi tristique senectus</p>
+                                            </td>
+                                            <td>$20.00</td>
+                                            <td>02</td>
+                                            <td class="highlight">$40.00</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <h5 class="t-uppercase f-400">Vivamus</h5>
+                                                <p class="text-muted">Maecenas nec faucibus lectus. Ut cursus elit ante, rutrum pretium augue tincidunt ut. Suspendisse ultrices sapien sit amet</p>
+                                            </td>
+                                            <td>$2322.00</td>
+                                            <td>01</td>
+                                            <td class="highlight">$2322.00</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <h5 class="t-uppercase f-400">Nullam consectetur dolor</h5>
+                                                <p class="text-muted">Quisque a porta mauris, non venenatis mi. Pellentesque habitant morbi</p>
+                                            </td>
+                                            <td>$1290.00</td>
+                                            <td>12</td>
+                                            <td class="highlight">$15,480.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"></td>
+                                            <td class="highlight">$20,092.00</td>
+                                        </tr>
+                                    </thead> 
+                                </tbody>
+                            </table>
+                            
+                            <div class="clearfix"></div>
+                            
+                            <div class="p-25">
+                                <h4 class="c-green f-400">REMARKS</h4>
+                                <p class="c-gray">Ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum. Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu, eu interdum massa bibendum.</p>
+                                
+                                <br/>
+                                
+                                <h4 class="c-green f-400">MERCY FOR YOUR BUSINESS</h4>
+                                <p class="c-gray">Proin ac iaculis metus. Etiam nisi nulla, fermentum blandit consectetur sed, ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum. Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu, eu interdum massa bibendum sit amet.</p>
+                            </div>
+                        </div>
+                        
+                        <footer class="m-t-15 p-20">
+                            <ul class="list-inline text-center list-unstyled">
+                                <li class="m-l-5 m-r-5"><small>support@company.com</small></li>
+                                <li class="m-l-5 m-r-5"><small>00971 452 9900</small></li>
+                                <li class="m-l-5 m-r-5"><small>www.company.com</small></li>
+                            </ul>
+                        </footer>
+                    </div>
+                    
+                </div>
+                
+                <button class="btn btn-float bgm-red m-btn" data-action="print"><i class="zmdi zmdi-print"></i></button>
+  
+
+            </section>
+        </section>
+        
+        <footer id="footer">
+            Copyright &copy; 2015 Material Admin
+            
+            <ul class="f-menu">
+                <li><a href="invoice.html">Home</a></li>
+                <li><a href="invoice.html">Dashboard</a></li>
+                <li><a href="invoice.html">Reports</a></li>
+                <li><a href="invoice.html">Support</a></li>
+                <li><a href="invoice.html">Contact</a></li>
+            </ul>
+        </footer>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+    
+    
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="vendors/bower_components/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+    
+    
+    </body>
+</html>

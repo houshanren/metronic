@@ -164,7 +164,7 @@ var FormEditable = function () {
         });
 
         $('#dob').editable({
-            inputclass: 'form-control',
+            inputclass: 'form-control'
         });
 
         $('#event').editable({

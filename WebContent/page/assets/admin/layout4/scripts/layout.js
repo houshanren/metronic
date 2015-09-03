@@ -413,6 +413,7 @@ var Layout = function() {
 
         $('.scroll-to-top').click(function(e) {
             e.preventDefault();
+            alert("s")
             $('html, body').animate({
                 scrollTop: 0
             }, duration);

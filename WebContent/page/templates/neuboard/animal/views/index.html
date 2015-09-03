@@ -1,0 +1,187 @@
+<div class="pageheader">
+    <h1>主页</h1>
+    <p class="description">欢迎您登录 宠物收养和寄存管理系统</p>
+    <div class="breadcrumb-wrapper hidden-xs">
+        <span class="label">You are here:</span>
+        <ol class="breadcrumb">
+            <li class="active">Dashboard</li>
+        </ol>
+    </div>
+</div>
+<section id="main-content" class="animated fadeInRight">
+    <div class="row">
+         <div class="col-md-6 col-lg-3">
+         <div class="panel panel-solid-success widget-mini">
+                        <div class="panel-body">
+                            <i class="icon-bar-chart"></i>
+                            <span class="total text-center">12</span>
+                            <span class="title text-center">七日新增寄存宠物</span>
+                        </div>
+                    </div>
+                    <div class="panel widget-mini">
+                        <div class="panel-body">
+                            <i class="icon-support"></i>
+                            <span class="total text-center">130</span>
+                            <span class="title text-center">七日被收养的宠物</span>
+                        </div>
+                    </div>
+           
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">狗窝健康率</h3>
+                        <div class="actions pull-right">
+                            <i data-fullscreen-widget class="fa fa-expand"></i>
+                        </div>
+                </div>
+                <div class="panel-body widget-gauge" ng-controller="gaugeCtrl">
+                    <canvas width="160" height="100" id="gauge" gauge gauge-type="gaugeType"  options="gaugeOptions" value="value" max-value="maxValue" animation-time="animationTime"></canvas>
+                    <div class="goal-wrapper">
+                        <span class="gauge-value pull-left"></span>
+                        <span id="gauge-text" class="gauge-value pull-left">3,200</span>
+                        <span id="goal-text" class="goal-value pull-right">5,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="panel panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">宠物心情</h3>
+                                <div class="actions pull-right">
+                                    <i data-fullscreen-widget class="fa fa-expand"></i>
+                                    <i data-widget-toggle  class="fa fa-chevron-down"></i>
+                                    <i data-widget-close class="fa fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body widget-weather">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <h3 class="text-center title">今日白天</h3>
+                                        <div class="text-center">
+                                         <div skycon="clear-day" width="75" height="75"></div>
+                                            <div class="temp">62°C</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <h3 class="text-center title">今日晚间</h3>
+                                        <div class="text-center">
+                                             <div skycon="partly-cloudy-night" width="75" height="75"></div>
+                                            <div class="temp">44°C</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-2">
+                                        <h6 class="text-center small-thin uppercase">猫🐱</h6>
+                                        <div class="text-center">
+                                            <div skycon="partly-cloudy-day" width="32" height="32"></div>
+                                            <span>48°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-2">
+                                        <h6 class="text-center small-thin uppercase">狗🐶</h6>
+                                        <div class="text-center">
+                                           <div skycon="rain" width="32" height="32"></div>
+                                            <span>39°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-2">
+                                        <h6 class="text-center small-thin uppercase">猪🐷</h6>
+                                        <div class="text-center">
+                                            <div skycon="sleet" width="32" height="32"></div>
+                                            <span>32°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-2">
+                                        <h6 class="text-center small-thin uppercase">鹦鹉</h6>
+                                        <div class="text-center">
+                                           <div skycon="snow" width="32" height="32"></div>
+                                            <span>28°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-2">
+                                        <h6 class="text-center small-thin uppercase">金丝雀</h6>
+                                        <div class="text-center">
+                                            <div skycon="wind" width="32" height="32"></div>
+                                            <span>40°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-2">
+                                        <h6 class="text-center small-thin uppercase">鹿</h6>
+                                        <div class="text-center">
+                                           <div skycon="fog" width="32" height="32"></div>
+                                            <span>42°C</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+<div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="panel panel-default chat-widget">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">留言板</h3>
+                                <div class="actions pull-right">
+                                <i data-fullscreen-widget class="fa fa-expand"></i>
+                                    <i data-widget-toggle  class="fa fa-chevron-down"></i>
+                                    <i data-widget-close class="fa fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row wrapper animated fadeInRight">
+                                    <div class="col-xs-2 col-sm-2 col-md-2 ">
+                                        <span class="avatar">
+                                        <img src="img/avatar3.png" class="img-circle" alt="">
+                                        <i class="on animated bounceIn"></i>
+                                    </span>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10">
+                                        <div class="post default">
+                                            <span class="arrow left"></span>
+                                            <p>Hey Mike...Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibut</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row wrapper animated fadeInLeft">
+                                    <div class="col-xs-10 col-sm-10 col-md-10">
+                                        <div class="post primary">
+                                            <span class="arrow right"></span>
+                                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-2 ">
+                                        <span class="avatar">
+                                        <img src="img/profile.jpg" class="img-circle" alt="">
+                                        <i class="on animated bounceIn"></i>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Say something">
+                                        <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">SEND</button>
+                                         </span>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+
+</section>
